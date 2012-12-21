@@ -1,0 +1,206 @@
+/***
+*** @desc Pure CSS Narwhal
+*** @author Alexandra Marin
+***/	
+@base-color: #44BCDA;
+@unit: 1.4em;
+
+body
+{
+	background: #f0f9ff;
+	background: -moz-linear-gradient(top, #f0f9ff 0%, #ededed 47%, #e0e0e0 100%);
+	background: -webkit-linear-gradient(top, #f0f9ff 0%,#ededed 47%,#e0e0e0 100%);
+	background: -o-linear-gradient(top, #f0f9ff 0%,#ededed 47%,#e0e0e0 100%);
+	background: -ms-linear-gradient(top, #f0f9ff 0%,#ededed 47%,#e0e0e0 100%);
+	background: linear-gradient(to bottom, #f0f9ff 0%,#ededed 47%,#e0e0e0 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#e0e0e0',GradientType=0 );
+	
+	font-family: 'Donegal One', serif;
+}
+
+a
+{
+	color: #000000;
+}
+
+#about {float:left;max-width: 300px;margin-left: 1.5*@unit;}
+
+#narwhal
+{	
+	position: relative;	
+	margin: 1.5*@unit @unit @unit 4*@unit;
+	width: 20 * @unit;
+	height: 20 * @unit;
+	float:left;
+}
+
+#narwhal  > div
+{
+	position: absolute;
+	margin-left: @unit;
+}
+
+#horn
+{
+	top: 0.4 * @unit;
+	left: 8.2 * @unit;
+	
+	width: 0;
+	height: 0;
+	
+	border-bottom: 10 * @unit solid darken(@base-color, 20%);
+	border-left: 1.2 * @unit solid transparent;
+	border-right: 1.2 * @unit solid transparent;
+}
+
+#eye
+{
+	top: 5.5 * @unit;
+	left: 6 * @unit;
+	
+	width: 1.2 * @unit;
+	height:	1.2 * @unit;
+	background: darken(@base-color, 20%);
+	
+	border: 0.6 * @unit solid lighten(@base-color, 50%);
+	border-radius: 2 * @unit;
+}
+
+#pupil
+{
+	width: 0.6 * @unit;
+	height:	0.5 * @unit;
+	background: lighten(@base-color, 10%); 
+	border-radius: 6 * @unit;
+	margin: 0.2*@unit;
+}
+
+#body
+{
+	top: 4 * @unit;
+	left: 3.5 * @unit;
+	
+	width: 10 * @unit;
+	height: 10 * @unit;
+	background: @base-color;
+	overflow: hidden;
+	
+	border-radius: 5.5 * @unit 0 5.5 * @unit 0;
+}
+
+#flappers
+{
+    position: absolute;
+	top: -1%;
+	left: 0%;
+}
+
+#left
+{
+    position:absolute;
+	left: -0.5 * @unit;
+	top: 13.5 * @unit;
+	width:5*@unit;
+	height:4*@unit;
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db9e8', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+	background-image: -moz-linear-gradient(right bottom , transparent 61%, #44BCDA 61%);
+	background-image: -webkit-linear-gradient(right bottom , transparent 61%, #44BCDA 61%);
+	background-image: -ms-linear-gradient(right bottom ,transparent 61%, #44BCDA 61%);
+	
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+	
+    border-radius: 4*@unit;
+	
+}
+
+#right
+{
+    position:absolute;
+	left: -6%;
+	top: 14.3*@unit;
+	width:5*@unit;
+	height:4*@unit;
+	
+	background-image: -moz-linear-gradient(right bottom , transparent 61%, #44BCDA 61%);
+	background-image: -webkit-linear-gradient(right bottom , transparent 61%, #44BCDA 61%);
+	background-image: -ms-linear-gradient(right bottom ,transparent 61%, #44BCDA 61%);
+	
+	-moz-transform: rotate(150deg);
+	-webkit-transform: rotate(150deg);
+	-ms-transform: rotate(150deg);
+    transform: rotate(150deg);
+	
+    border-radius: 4*@unit;
+}
+
+#chest
+{
+	background-image: -moz-repeating-radial-gradient(110px 110px,circle,rgba(153, 221, 255, 0.8) 0px, rgba(153, 221, 255, 0.5) 4px, rgba(153, 221, 255, 0) 50px),  -moz-repeating-radial-gradient(110px 110px,circle,transparent 0px, rgba(85, 0, 255, 0.1) 2px, transparent 10px);
+	background-image: -webkit-repeating-radial-gradient(110px 110px,circle, rgba(153, 221, 255, 0.8) 0px, rgba(153, 221, 255, 0.5) 4px, rgba(153, 221, 255, 0) 50px),  -webkit-repeating-radial-gradient(110px 110px,circle,transparent 0px, rgba(85, 0, 255, 0.1) 2px, transparent 10px);
+	background-image: -ms-repeating-radial-gradient(110px 110px,circle, rgba(153, 221, 255, 0.8) 0px, rgba(153, 221, 255, 0.5) 4px, rgba(153, 221, 255, 0) 50px),  -ms-repeating-radial-gradient(110px 110px,circle,transparent 0px, rgba(85, 0, 255, 0.1) 2px, transparent 10px);
+	
+	border-top: 2px dotted darken(@base-color, 20%);
+	border-left: 2px dotted darken(@base-color, 20%);
+	border-radius: 5.5 * @unit 0;
+
+	position:absolute;
+	left: 3.5 * @unit;
+	top: 3.5 * @unit;
+	
+	width: 6.5 * @unit;
+	height: 6.5 * @unit;
+	
+}
+.spot
+{
+	width:10px;
+	height:10px;
+	border-radius: 10px;
+	margin:10px;
+}
+
+#spots
+{
+	top: 8 * @unit;
+}
+
+@iterations: 5;
+
+.loopingClass (@index) when (@index > 0) {
+
+
+	(~"#myclass_@{index}") {
+		position:absolute;
+		top: @index * (0.9 * @unit);
+		left: 3.8 * @unit;
+		background: darken(@base-color, 20%);
+	}
+
+	.loopingClass(@index - 1);
+}
+.loopingClass (0) {}
+
+.loopingClass (@iterations);
+
+
+@iteration: 10;
+
+.loopingClas (@index) when (@index > 5) {
+
+	(~"#myclass_@{index}") {
+		position:absolute;
+		top: @index * (0.9 * @unit);
+		left: 4.5 * @unit;
+		margin-top: -4.5 * @unit;
+		background: darken(@base-color, 25%);
+	}
+
+	.loopingClas(@index - 1);
+}
+.loopingClas (5) {}
+
+.loopingClas (@iteration);
