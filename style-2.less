@@ -1,0 +1,120 @@
+/***
+*** @desc Pure CSS Rhino
+*** @author Alexandra Marin
+***/		
+@white: #F2F2F2;
+@blue: #419BBF;
+@units: 1.8em;
+
+#rhino
+{	
+	position: relative;	
+	margin: 7*@units 0 1* @units 0;
+	
+	width: 20 * @units;
+	height: 10 * @units;
+	
+	-moz-transform: rotate(-40deg);
+	-webkit-transform: rotate(-40deg);
+	transform: rotate(-40deg);
+}
+
+#rhino  > div
+{
+	position: absolute;
+}
+
+#ears
+{
+	top: 2.2 * @units;
+	left: 13.2 * @units;
+	
+	width: 2 * @units;
+	height:	3 * @units;
+
+	background: darken(@blue,20%);
+	
+	border-radius: 15 * @units 1 * @units 15 * @units 3 * @units;
+	
+	-moz-transform: rotate(40deg);
+	-webkit-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+
+#eyes
+{	
+	width: 1.2 * @units;
+	height:	1.2 * @units;
+	
+	background: @blue;
+	
+	border: 0.6 * @units solid lighten(@white, 5%);
+	border-radius: 2 * @units;
+	position:relative;
+	
+	top: 4.4 * @units;
+	left: 8.4 * @units;
+}
+
+#nose
+{	
+	width: 0.6 * @units;
+	height:	0.6 * @units;
+	
+	border: 0.2 * @units solid darken(@blue, 30%);
+	border-radius: 2 * @units;
+	position:relative;
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db9e8', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+	background-image: -moz-linear-gradient(right top, lighten(@blue, 5%) 65%, transparent 65%);
+	background-image: -webkit-linear-gradient(right top , lighten(@blue, 5%) 65%, transparent 65%);
+	background-image: -ms-linear-gradient(right top ,lighten(@blue, 5%) 65%, transparent 65%);
+	
+	top: 5.6 * @units;
+	left: 6.2 * @units;
+}
+
+#horn
+{
+	top: 0.1 * @units;
+	left: 6.5 * @units;
+	
+	width: 0px;
+	height: 0px;
+	
+	border-bottom: 3 * @units solid darken(@blue,20%);
+	border-right: 1.2 * @units solid transparent;
+	border-left: 1.2 * @units solid transparent;
+
+}
+
+#second_horn
+{
+	top: 1.6 * @units;
+	left: 9.2 * @units;
+	
+	width: 0px;
+	height: 0px;
+	
+	border-bottom: 1.5 * @units solid darken(@blue,20%);
+	border-right: 0.8 * @units solid transparent;
+	border-left: 0.8 * @units solid transparent;
+
+}
+
+#head
+{
+	top: 3 * @units;
+	left: 4.4 * @units;
+	
+	width: 8.4 * @units;
+	height: 4.5 * @units;
+	
+	margin: auto;
+	
+	background: @white;
+	box-shadow: 0 0 2.4*@units 1*@units lighten(@blue, 20%) inset;
+	
+	border: 0.3 * @units solid darken(@blue,20%);
+	border-radius: 18 * @units 8 * @units 30 * @units 18 * @units;
+}

@@ -3,6 +3,8 @@
 *** @author Alexandra Marin
 ***/	
 @base-color: #44BCDA;
+@white: #F2F2F2;
+@blue: #419BBF;
 @unit: 1.4em;
 
 body
@@ -23,15 +25,26 @@ a
 	color: #000000;
 }
 
+.title
+{
+	margin-left: 12*@unit;
+	z-index: 999;
+}
+
 #about {float:left;max-width: 300px;margin-left: 1.5*@unit;}
+
+#container
+{
+		float:left;
+}
 
 #narwhal
 {	
 	position: relative;	
 	margin: 1.5*@unit @unit @unit 4*@unit;
 	width: 20 * @unit;
-	height: 20 * @unit;
-	float:left;
+	height: 10 * @unit;
+
 }
 
 #narwhal  > div
@@ -40,7 +53,7 @@ a
 	margin-left: @unit;
 }
 
-#horn
+#horn_narwhal
 {
 	top: 0.4 * @unit;
 	left: 8.2 * @unit;
