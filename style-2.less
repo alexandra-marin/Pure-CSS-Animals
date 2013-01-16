@@ -4,15 +4,16 @@
 ***/		
 @white: #F2F2F2;
 @blue: #419BBF;
-@units: 1.8em;
+@units: 1.9em;
 
 #rhino
 {	
-	position: relative;	
-	margin: 7*@units 0 1* @units 0;
+	position: relative;
+	float:left;
+	margin: 6*@units 9.5*@units 0 0;
 	
-	width: 20 * @units;
-	height: 10 * @units;
+	width: 5 * @units;
+	height: 6 * @units;
 	
 	-moz-transform: rotate(-40deg);
 	-webkit-transform: rotate(-40deg);
@@ -22,6 +23,7 @@
 #rhino  > div
 {
 	position: absolute;
+	margin: -2 * @units;
 }
 
 #ears

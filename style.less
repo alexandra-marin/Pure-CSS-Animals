@@ -2,10 +2,10 @@
 *** @desc Pure CSS Narwhal
 *** @author Alexandra Marin
 ***/	
-@base-color: #44BCDA;
+@base-color: lighten(#44BCDA,3%);
 @white: #F2F2F2;
 @blue: #419BBF;
-@unit: 1.4em;
+@unit: 1.3em;
 
 body
 {
@@ -18,11 +18,18 @@ body
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#e0e0e0',GradientType=0 );
 	
 	font-family: 'Donegal One', serif;
+	margin:auto;		
 }
 
 a
 {
 	color: #000000;
+}
+
+h1
+{
+	font-size: 1.5*@unit;
+	margin-bottom: 0.8 * @unit;
 }
 
 .title
@@ -31,20 +38,25 @@ a
 	z-index: 999;
 }
 
-#about {float:left;max-width: 300px;margin-left: 1.5*@unit;}
+#about {
+//float:left;
+margin-left: 2*@unit;
+clear:both;}
 
 #container
 {
-		float:left;
+	//	float:left;
+		margin: 0 1.5*@unit;
+		height: 20 * @unit;
 }
 
 #narwhal
 {	
 	position: relative;	
-	margin: 1.5*@unit @unit @unit 4*@unit;
-	width: 20 * @unit;
-	height: 10 * @unit;
 
+	width: 20 * @unit;
+	height: 15 * @unit;
+	float:left;
 }
 
 #narwhal  > div
@@ -101,7 +113,7 @@ a
 	border-radius: 5.5 * @unit 0 5.5 * @unit 0;
 }
 
-#flappers
+#tails
 {
     position: absolute;
 	top: -1%;

@@ -1,0 +1,139 @@
+/***
+*** @desc Pure CSS Unicorn
+*** @author Alexandra Marin
+***/	
+@base-color: #92AFFF;
+@g1: darken(#E6E8EC,3%);
+
+@unit: 1.1em;
+
+@h5: lighten(#275D73,13%);
+
+#unicorn
+{	
+	position: relative;	
+	margin: auto;
+	
+	width: 20 * @unit;
+	height: 20 * @unit;
+	
+	margin-top:0;
+	
+	float: left;
+}
+
+#unicorn  > div
+{
+	position: absolute;
+}
+
+#ear-uni
+{
+	top: 2 * @unit;
+	left: 6.5 * @unit;
+	
+	width: 3 * @unit;
+	height:	4 * @unit;
+	
+	background-image: -moz-linear-gradient(right top , transparent 41%, darken(@g1, 5%) 41%);
+	background-image: -webkit-linear-gradient(right top , transparent 41%, darken(@g1, 5%) 41%);
+	background-image: -ms-linear-gradient(right top , transparent 41%, darken(@g1, 5%) 41%);
+	background-image: linear-gradient(right top , transparent 41%, darken(@g1, 5%) 41%);
+	border-radius: 80%;
+	
+	-webkit-transform: rotate(35deg);
+	transform: rotate(35deg);
+}
+
+#horn-uni
+{
+	top: 2 * @unit;
+	left: 11 * @unit;
+	
+	width: 00px;
+	height: 00px;
+	
+//	background: @base-color -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+//	background: @base-color -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+//	background: @base-color -ms-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+//	background: @base-color linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+	
+
+	//    -webkit-border-image:-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+	
+	border-left: 6.5 * @unit solid @h5;
+//	border-top: 2 * @unit solid transparent;
+	border-bottom: 2 * @unit solid transparent;
+
+//	margin-left: -3 * @unit;
+	
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+
+}
+ 
+#eye-uni
+{
+	top: 5.5 * @unit;
+	left: 10 * @unit;
+	
+	width: 1.2 * @unit;
+	height:	1.2 * @unit;
+	background: @h5;
+	
+	border: 0.6 * @unit solid white;
+	border-radius: 2 * @unit;
+}
+
+#muzzle
+{
+	top: 5.1 * @unit;
+	left: 7.2 * @unit;
+	
+	width: 11 * @unit;
+	height: 6 * @unit;
+	background: @g1;
+	box-shadow: @unit @unit @unit -@unit rgba(0, 0, 0, 0.1) inset;
+	
+	border-top-left-radius: 4 * @unit;
+	border-top-right-radius: 3 * @unit;
+	border-bottom-right-radius: 3 * @unit;
+	
+	-moz-transform: rotate(40deg);
+	-webkit-transform: rotate(40deg);
+	transform: rotate(40deg);
+}
+
+#neck
+{
+	top: 4 * @unit;
+	left: 3.5 * @unit;
+	
+	width: 8.5 * @unit;
+	height: 14 * @unit;
+	background: @g1;
+	box-shadow: 1.5 * @unit @unit @unit -@unit rgba(0, 0, 0, 0.1) inset;
+	
+	border-top-left-radius: 20 * @unit;
+	border-bottom-right-radius: 8 * @unit;
+	border-bottom-left-radius: 4 * @unit;
+}
+
+#nose-uni
+{	
+	width: 0.6 * @unit;
+	height:	0.6 * @unit;
+	
+	border: 0.2 * @unit solid darken(@h5, 30%);
+	border-radius: 2 * @unit;
+	position:relative;
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db9e8', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+	background-image: -moz-linear-gradient(left top, lighten(@h5, 15%) 65%, transparent 65%);
+	background-image: -webkit-linear-gradient(left top , lighten(@h5, 15%) 65%, transparent 65%);
+	background-image: -ms-linear-gradient(left top ,lighten(@h5, 15%) 65%, transparent 65%);
+	
+	top: 8.5 * @unit;
+	left: 15.5 * @unit;
+}
